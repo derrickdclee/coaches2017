@@ -1,0 +1,20 @@
+{
+  "name": "boxtimes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "moment": "2.18.1",
+    "node-sass": "4.5.3",
+    "node-sass-middleware": "^0.11.0"
+  }
+}
