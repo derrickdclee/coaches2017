@@ -4,6 +4,7 @@
 
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boxtimes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/jquery-ui.min.css"/>
@@ -17,30 +18,36 @@
   </head>
 
   <body>
-    <div class="body container">
+    <div class="body container-fluid">
       {{> header }}
       {{> nav }}
-      <div class="poster">
-        <img src="/images/poster.jpeg">
-      </div>
+      {{> poster }}
       <div class="video">
-        <video controls autoplay>
+        <video controls>
           <source src="/media/COACHES_TEASER_0616.mp4" type="video/mp4">
         </video>
       </div>
       <div class="thumbnails">
         <div class="row">
           <div class="col-md-3 col-xs-6">
-            <a href="/calendar"><img src="/images/calendar_thumb.jpeg"></a>
+            <div class="thumb">
+              <a href="/calendar"><img src="/images/calendar_thumb.jpeg"></a>
+            </div>
           </div>
           <div class="col-md-3 col-xs-6">
-            <a href="/rules"><img src="/images/rules.jpeg"></a>
+            <div class="thumb">
+              <a href="/rules"><img src="/images/rules.jpeg"></a>
+            </div>
           </div>
           <div class="col-md-3 col-xs-6">
-            <a href="https://goo.gl/o8yUq5"><img src="/images/registration.jpeg"></a>
+            <div class="thumb">
+              <a href="https://goo.gl/o8yUq5"><img src="/images/registration.jpeg"></a>
+            </div>
           </div>
           <div class="col-md-3 col-xs-6">
-            <a href="https://goo.gl/o8yUq5"><img src="/images/registration.jpeg"></a>
+            <div class="thumb">
+              <a href="https://goo.gl/o8yUq5"><img src="/images/registration.jpeg"></a>
+            </div>
           </div>
         </div>
       </div>
