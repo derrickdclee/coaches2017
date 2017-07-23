@@ -1,3 +1,6 @@
+body {
+  min-height: 100vh; }
+
 .logo {
   height: 120px;
   margin: 15px auto; }
@@ -52,10 +55,12 @@
   width: 100%;
   z-index: 1; }
 
+.body {
+  min-height: 85vh; }
+
 .footer {
-  margin-top: 50px;
+  height: 15vh;
   margin-bottom: 0;
-  border-radius: 0px !important;
   background-color: #000; }
   .footer p {
     text-align: center;
@@ -68,7 +73,22 @@
   overflow-x: hidden; }
 
 .video {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
   .video video {
+    width: 100%;
+    height: auto; }
+
+.calendar {
+  width: 100%;
+  height: auto; }
+  .calendar img {
+    max-width: 100%;
+    max-height: 100%; }
+
+.thumbnails {
+  text-align: center;
+  margin-bottom: 50px; }
+  .thumbnails img {
     width: 100%;
     height: auto; }

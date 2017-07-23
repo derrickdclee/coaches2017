@@ -20,23 +20,14 @@
     <div class="body container">
       {{> header }}
       {{> nav }}
-      <div class="video">
-        <video controls autoplay>
-          <source src="/media/COACHES_TEASER_0616.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="thumbnails">
-        <div class="row">
-          <div class="col-md-4">
-            <a href="/calendar"><img src="/images/calendar_thumb.jpeg"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="/rules"><img src="/images/rules.jpeg"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://goo.gl/o8yUq5"><img src="/images/registration.jpeg"></a>
-          </div>
-        </div>
+      <div>
+        <form action='/contact' method="POST">
+          <label for="userEmail">이메일 주소</label>
+          <input type="email" name="emailAddress" id="userEmail"><br>
+          <label for="emailBody">본문</label>
+          <textarea id="emailBody" name="emailBody" placeholder="문의 사항을 적어주세요"></textarea>
+          <input type="submit" value="제출">
+        </form>
       </div>
     </div>
     {{> footer }}

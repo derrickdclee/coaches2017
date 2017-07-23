@@ -4,10 +4,11 @@ const path = require('path'),
       fs = require('fs'),
       sassMiddleware = require('node-sass-middleware');
       routes = require('./routes.js');
-
-const formatTimeDiff = require('./helper/formatTimeDiff.js');
+      bodyParser = require('body-parser');
 
 const port = process.env.PORT || 3000;
+// import environmental variables from our variables.env file
+require('dotenv').config({ path: 'variables.env' });
 
 var app = express();
 
@@ -29,6 +30,11 @@ app.use(
   })
 );
 
+// Takes the raw requests and turns them into usable properties on req.body
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Routes
 app.use('/', routes);
 
 app.listen(port, () => {
