@@ -93,6 +93,14 @@ body {
     display: block;
     max-width: 100%; }
 
+.intro-text {
+  margin: 50px auto; }
+
+.rules .workout-card {
+  background-color: #eee;
+  padding: 5px;
+  margin: 10px auto; }
+
 @media screen and (min-width: 768px) {
   .rules img {
     max-width: 60%;

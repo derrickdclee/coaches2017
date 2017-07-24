@@ -117,7 +117,16 @@ body {
   }
 }
 
+.intro-text {
+  margin: 50px auto;
+}
+
 .rules {
+  .workout-card {
+    background-color: #eee;
+    padding: 5px;
+    margin: 10px auto;
+  }
   @media screen and (min-width: $breakpoint) {
     img {
       max-width: 60%;
