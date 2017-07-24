@@ -1,22 +1,43 @@
 $breakpoint: 768px;
+$breakpoint2: 1025px;
 
-body {
-  min-height: 100vh;
+html {
+  p {
+    font-size: 1.7rem;
+  }
 }
 
 .container-fluid {
-  @media screen and (min-width: $breakpoint ) {
+  @media screen and (min-width: $breakpoint2 ) {
     margin-left: 15%;
     margin-right: 15%;
+  }
+  @media screen and (min-width: $breakpoint) and (max-width: 1024px) {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
 .logo {
   text-align: center;
-  margin: 20px auto;
+  margin: 5% auto;
   img {
-    width: 100px;
     height: auto;
+    width: 25%;
+  }
+  @media screen and (min-width: $breakpoint) and (max-width: 1024px) {
+    margin: 4% auto;
+  }
+  @media screen and (min-width: $breakpoint2 ) {
+    margin: 3% auto;
+    img {
+      width: 18%;
+    }
+  }
+}
+.navbar-header{
+  .collapsed {
+    background-color: #f8f8f8 !important;
   }
 }
 
@@ -30,12 +51,13 @@ body {
     li {
       display: inline-block;
       float:none;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 }
 
 .navbar-brand {
+  font-size: 1.7rem;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -48,17 +70,19 @@ body {
   overflow: hidden;
   @media screen and (min-width: $breakpoint) {
     margin-top: 5%;
+    font-size: 1.8rem;
   }
   @media screen and (max-width: 767px) {
     margin-top: 8%;
+    font-size: 1.5rem;
   }
-    height: 15vh;
-    margin-bottom: 0;
-    background-color: #222;
-    text-align: center;
-    span {
-      color: #999;
-    }
+  min-height: 15vh;
+  margin-bottom: 0;
+  background-color: #222;
+  text-align: center;
+  span {
+    color: #999;
+  }
 }
 
 .poster {
@@ -72,9 +96,16 @@ body {
   margin-bottom: 5%;
 }
 .video {
-  video {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   text-align: center;
   margin-bottom: 5%;
@@ -92,8 +123,8 @@ body {
 .rules {
   @media screen and (min-width: $breakpoint) {
     img {
-      max-width: 80%;
-      max-height: 80%;
+      max-width: 60%;
+      max-height: 60%;
     }
   }
   @media screen and (max-width: 767px) {
