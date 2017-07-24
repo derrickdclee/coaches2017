@@ -87,8 +87,10 @@ body {
 
 .calendar {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin: 0 auto; }
   .calendar img {
+    display: block;
     max-width: 100%;
     max-height: 100%; }
 
