@@ -1,7 +1,6 @@
 const path = require('path'),
       express = require('express'),
       hbs = require('hbs'),
-      fs = require('fs'),
       sassMiddleware = require('node-sass-middleware');
       routes = require('./routes.js');
       bodyParser = require('body-parser');

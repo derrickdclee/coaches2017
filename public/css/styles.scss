@@ -143,11 +143,10 @@ body {
     }
   }
 }
-.thumbnails {
-  // overflow: hidden;
-}
+
 .thumb {
   overflow: hidden;
+  margin: 10px auto;
   border: 1px solid #ddd;
   border-radius: 4px;
   img {
@@ -161,10 +160,6 @@ body {
       transform: scale(1.05);
     }
   }
-}
-
-.col-xs-6 {
-  padding: 5px 5px;
 }
 
 a.nostyle:link {

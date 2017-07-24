@@ -19,17 +19,9 @@ router.get('/rules', (req, res) => {
   res.render('rules.hbs', {});
 });
 
-router.get('/wod', (req, res) => {
-  res.render('wod.hbs', {});
-});
-
 router.get('/contact', (req, res) => {
   res.render('contact.hbs', {});
 });
 router.post('/contact', mailController.sendMail);
-
-router.get('/registration', (req, res) => {
-  res.render('registration.hbs', {});
-});
 
 module.exports = router;
