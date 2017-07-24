@@ -7,6 +7,10 @@ html {
   }
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 .container-fluid {
   @media screen and (min-width: $breakpoint2 ) {
     margin-left: 15%;
@@ -20,19 +24,10 @@ html {
 
 .logo {
   text-align: center;
-  margin: 5% auto;
+  margin: 4% auto;
   img {
     height: auto;
-    width: 25%;
-  }
-  @media screen and (min-width: $breakpoint) and (max-width: 1024px) {
-    margin: 4% auto;
-  }
-  @media screen and (min-width: $breakpoint2 ) {
-    margin: 3% auto;
-    img {
-      width: 18%;
-    }
+    width: 100%;
   }
 }
 .navbar-header{
@@ -51,7 +46,7 @@ html {
     li {
       display: inline-block;
       float:none;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 }
@@ -65,6 +60,7 @@ html {
 
 .body {
   min-height: 85vh;
+  background-color: white;
 }
 .footer {
   overflow: hidden;
@@ -134,7 +130,9 @@ html {
     }
   }
 }
-
+.thumbnails {
+  // overflow: hidden;
+}
 .thumb {
   overflow: hidden;
   border: 1px solid #ddd;
@@ -192,7 +190,8 @@ a.nostyle:visited {
     display: block;
   }
   .button {
-    background-color: #e67e22;
+    background-color: #222;
+    color: #fff;
     border: 0;
     font-weight: 800;
     margin-top: 20px;

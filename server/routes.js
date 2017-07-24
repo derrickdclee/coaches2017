@@ -28,4 +28,8 @@ router.get('/contact', (req, res) => {
 });
 router.post('/contact', mailController.sendMail);
 
+router.get('/registration', (req, res) => {
+  res.render('registration.hbs', {});
+});
+
 module.exports = router;
