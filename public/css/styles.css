@@ -142,16 +142,11 @@ a.nostyle:visited {
   margin-bottom: 2%; }
 
 .contact {
-  text-align: center; }
+  text-align: left; }
   .contact input, .contact textarea {
+    width: 100%;
     padding: 10px;
     border: 1px solid #888; }
-    @media screen and (min-width: 768px) {
-      .contact input, .contact textarea {
-        width: 50%; } }
-    @media screen and (max-width: 767px) {
-      .contact input, .contact textarea {
-        width: 100%; } }
   .contact textarea {
     min-height: 200px; }
   .contact label {
@@ -163,3 +158,11 @@ a.nostyle:visited {
     border: 0;
     font-weight: 800;
     margin-top: 20px; }
+  @media screen and (min-width: 1025px) {
+    .contact {
+      padding-left: 25%;
+      padding-right: 25%; } }
+  @media screen and (max-width: 1024px) {
+    .contact {
+      padding-left: 0;
+      padding-right: 0; } }
