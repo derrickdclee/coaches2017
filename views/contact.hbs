@@ -23,10 +23,14 @@
       {{> nav }}
       <div class="contact">
         <form action='/contact' method="POST">
-          <label for="userEmail">이메일 주소</label>
-          <input type="email" name="emailAddress" id="userEmail" placeholder="연락 받으실 이메일 주소">
-          <label for="emailBody">내용</label>
-          <textarea id="emailBody" name="emailBody" placeholder="문의 사항"></textarea>
+          <div class="emailAddress">
+            <label for="userEmail">이메일 주소</label>
+            <input type="email" name="emailAddress" id="userEmail" placeholder="연락 받으실 이메일 주소">
+          </div>
+          <div class="emailText">
+            <label for="emailBody">내용</label>
+            <textarea id="emailBody" name="emailBody" placeholder="문의 사항"></textarea>
+          </div>
           <input class="button" type="submit" value="제출">
         </form>
       </div>

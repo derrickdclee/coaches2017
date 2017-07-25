@@ -142,7 +142,8 @@ a.nostyle:visited {
   margin-bottom: 2%; }
 
 .contact {
-  text-align: left; }
+  text-align: left;
+  padding-bottom: 5%; }
   .contact input, .contact textarea {
     width: 100%;
     padding: 10px;
@@ -150,8 +151,10 @@ a.nostyle:visited {
   .contact textarea {
     min-height: 200px; }
   .contact label {
-    padding: 10px 0;
+    padding-top: 10px;
     display: block; }
+  .contact .emailAddress {
+    margin-bottom: 10px; }
   .contact .button {
     background-color: #222;
     color: #fff;
