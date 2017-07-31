@@ -13,7 +13,16 @@ body {
   background-color: whitesmoke;
 }
 
-.container-fluid {
+.header {
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3%;
+  @media #{$small-screen} {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
   @media #{$medium-screen} {
     margin-left: 10%;
     margin-right: 10%;
@@ -22,41 +31,53 @@ body {
     margin-left: 15%;
     margin-right: 15%;
   }
-}
-
-.logo {
-  text-align: center;
-  margin: 4% auto;
-  img {
-    height: auto;
-    width: 100%;
-  }
-}
-.navbar-header{
-  .collapsed {
-    background-color: #f8f8f8 !important;
-  }
-}
-
-.navbar-nav-custom {
-  @media #{$medium-and-large-screen} {
-    float:none;
-    margin:0 auto;
-    display: block;
+  .logo {
     text-align: center;
+    margin-bottom: 3%;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .navbar {
+    margin-bottom: 0;
+    &-header {
+      .collapsed {
+        background-color: #f8f8f8 !important;
+      }
+    }
+    &-brand {
+      font-size: 1.7rem;
+      @media #{$medium-and-large-screen} {
+        display: none;
+      }
+    }
+    &-nav-custom {
+      @media #{$medium-and-large-screen} {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
 
-    li {
-      display: inline-block;
-      float:none;
-      font-size: 2rem;
+        li {
+          display: inline-block;
+          margin: 0 3%;
+          float: none;
+          font-size: 2rem;
+        }
+      }
     }
   }
 }
 
-.navbar-brand {
-  font-size: 1.7rem;
-  @media #{$medium-and-large-screen} {
-    display: none;
+.container-fluid {
+  @media #{$medium-screen} {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  @media #{$large-screen} {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
