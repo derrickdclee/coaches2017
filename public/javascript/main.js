@@ -8,8 +8,11 @@ $(document).ready(function() {
     heightOfLogo = $('.logo').outerHeight(true);
   })
   $(window).on('scroll', function() {
-    $(window).scrollTop() > topOfLogo + heightOfLogo ? $('nav').addClass('goToTop') :
-        $('nav').removeClass('goToTop');
+    if ($(window).scrollTop() > (topOfLogo + heightOfLogo) ) {
+      $('nav').addClass('goToTop');
+    } else {
+      $('nav').removeClass('goToTop');
+    }
   });
   $('.rules-text > a').on('click', function(e) {
     e.preventDefault();
