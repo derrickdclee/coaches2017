@@ -9,6 +9,7 @@ $(document).ready(function() {
   })
   $(window).on('scroll', function() {
     if ($(window).scrollTop() > (topOfLogo + heightOfLogo) ) {
+      console.log(topOfLogo + heightOfLogo);
       $('nav').addClass('goToTop');
     } else {
       $('nav').removeClass('goToTop');
