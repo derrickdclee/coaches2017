@@ -86,6 +86,17 @@ body {
   background-color: white;
   padding-bottom: 3%;
 }
+
+button {
+  border: 0;
+  border-radius: 5px;
+  background-color: #132FAE;
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .footer {
   overflow: hidden;
   min-height: 15vh;
