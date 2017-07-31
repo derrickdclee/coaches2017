@@ -4,15 +4,15 @@ html p {
 body {
   background-color: whitesmoke; }
 
-@media screen and (min-width: 1025px) {
-  .container-fluid {
-    margin-left: 15%;
-    margin-right: 15%; } }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container-fluid {
     margin-left: 10%;
     margin-right: 10%; } }
+
+@media screen and (min-width: 1025px) {
+  .container-fluid {
+    margin-left: 15%;
+    margin-right: 15%; } }
 
 .logo {
   text-align: center;
@@ -50,18 +50,16 @@ body {
   overflow: hidden;
   min-height: 15vh;
   margin-bottom: 0;
+  margin-top: 8%;
+  font-size: 1.5rem;
   background-color: #222;
   text-align: center; }
+  .footer span {
+    color: #999; }
   @media screen and (min-width: 768px) {
     .footer {
       margin-top: 5%;
       font-size: 1.8rem; } }
-  @media screen and (max-width: 767px) {
-    .footer {
-      margin-top: 8%;
-      font-size: 1.5rem; } }
-  .footer span {
-    color: #999; }
 
 .poster {
   margin-top: 5%;
@@ -100,16 +98,15 @@ body {
     font-size: 1.7rem; }
   .rules .workout-card {
     background-color: #eee;
-    padding: 5px;
-    margin: 10px auto; }
+    padding: 10px;
+    margin: 3% auto; }
+  .rules img {
+    max-width: 100%;
+    max-height: 100%; }
   @media screen and (min-width: 768px) {
     .rules img {
       max-width: 60%;
       max-height: 60%; } }
-  @media screen and (max-width: 767px) {
-    .rules img {
-      max-width: 100%;
-      max-height: 100%; } }
 
 .thumbnails .thumb {
   overflow: hidden;
@@ -140,7 +137,9 @@ a.nostyle:visited {
 
 .contact {
   text-align: left;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  padding-left: 0;
+  padding-right: 0; }
   .contact input, .contact textarea {
     width: 100%;
     padding: 10px;
@@ -162,7 +161,3 @@ a.nostyle:visited {
     .contact {
       padding-left: 25%;
       padding-right: 25%; } }
-  @media screen and (max-width: 1024px) {
-    .contact {
-      padding-left: 0;
-      padding-right: 0; } }
