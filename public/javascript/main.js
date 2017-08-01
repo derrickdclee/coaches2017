@@ -10,4 +10,18 @@ $(document).ready(function() {
       window.location.hash = hash;
     });
   });
+
+  let height = $('.navbar').offset().top;
+
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop() >= height) {
+      $('.navbar').addClass('goToTop');
+    } else {
+      $('.navbar').removeClass('goToTop');
+    }
+  });
+
+  $(window).on('resize', function() {
+    height = $('.navbar').offset().top;
+  });
 });
