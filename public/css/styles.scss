@@ -23,6 +23,9 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
+    .separator {
+      display: none;
+    }
   }
   @media #{$medium-screen} {
     margin-left: 10%;
@@ -31,6 +34,9 @@ body {
   @media #{$large-screen} {
     margin-left: 15%;
     margin-right: 15%;
+  }
+  .separator {
+    color: #777;
   }
   .logo {
     text-align: center;
