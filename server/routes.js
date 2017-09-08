@@ -19,6 +19,10 @@ router.get('/rules', (req, res) => {
   res.render('rules.hbs', {});
 });
 
+router.get('/booth', (req, res) => {
+  res.render('booth.hbs', {});
+});
+
 router.get('/contact', (req, res) => {
   res.render('contact.hbs', {});
 });
